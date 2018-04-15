@@ -21,7 +21,7 @@ class LinkedList
      T get(int index) const;
      T remove(int index); 
 
-     //std::vector<T> toArray() const;
+     std::vector<T> toArray() const;
 
      LinkedList<T>& operator+=( const T& item );
 };
@@ -83,7 +83,6 @@ T LinkedList<T>::get( int index ) const
 	{
 		it++;
 	}
-	
 	return it;
 }
 
